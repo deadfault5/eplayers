@@ -1,55 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="the eplayers website">
     <meta name="author" content="deadfault">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>The e-players</title>
 </head>
-<body>
-    <header class="cabecalho">
-        <div class="container-grid header-flex">
-            <img class="logo" src="images/logo.svg" alt="">
 
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Horarios</a>
-                <a href="#">Campeonatos</a>
-                <a href="#">Resultados</a>
-                <a href="https://lolesports.com/news">Noticias</a>
-            </nav>
-        </div>
-    </header>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img class="logo" src="./images/logo.svg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">registro</a></li>
+                            <li><a class="dropdown-item" href="#">Redes sociais</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- Navbar content -->
+    </nav>
+
+
     <main>
-        <section class="banner">
-            <div class="container-grid, banner-info-box">
-                <article class="banner-Info">
-                    <h1 class='info-title'>E-players</h1>
-                    <p class="info-description">O maior clube de E-sports do Brasil</p>
-                    <a href="formulario.html" class="info-link">Inscreva-se</a>
-                </article>
+        <!-- carrousel bootstrap -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner_cs.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="hCarrousel">E-players</h5>
+                        <p class="Pcarrousel">O maior Time de E-sport do brasil.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner_lol.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="hCarrousel">Venha fazer parte do time.</h5>
+                        <p class="Pcarrousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner_pilotos.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="hCarrousel">Se inscreva e participe.</h5>
+                        <p class="Pcarrousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <section class='jogos'>
-            <div class="container-grid section-title">
-                <h2 class="h2Team">Modalidades</h2>
-                <spam class="spamTeam">Conheca os jogadores do clube</spam>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Conheca nossas modalidades</h5>
+                    <div class="logos"> 
+                        <img src="./images/cs-logo.png">
+                        <img src="./images/lol-logo.png">
+                        <img src="./images/f1-logo.png">
+                        <img src="./images/fifa.png">
+                    </div>
+
+                </div>
             </div>
-            <div class="container-grid section-jogos col-12">
-                <img class="cs-go" src="images/cs-logo.png">
-                <img class="lol-logo" src="images/lol-logo.png">
-                <img class="r6-logo" src="images/raibowsix-removebg-preview.png">
-                <img class="valorant-logo" src="images/valorant.png">
-            </div>
-            <div class="container-grid section-jogos2">
-                <img class="f1-logo" src="images/f1-logo.png">
-                <img class="fifa-logo" src="images/fifa.png">
-                <img class="free_fire-logo" src="images/free-fire-logo-2.png">
-                <img class="fortnite-logo" src="images/fortnite-logo-1F7897BD1E-seeklogo.com.png">
-            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
         </section>
         <section class="players">
             <div class="container d-flex justify-content-between">
@@ -158,7 +224,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script>
+        function abreFecha() {
+            alert("bom dia");
+        }
+    </script>
 </body>
 
 </html>
-<!--you still here? its over my friend,go home, have fun, we all gona die tommorow.-->
